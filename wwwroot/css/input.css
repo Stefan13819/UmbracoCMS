@@ -1,0 +1,22 @@
+﻿@import "tailwindcss";
+@import "./swiper.css";
+
+
+@theme {
+    --font-poppins: "poppins", sans-serif;
+}
+
+
+
+.rte h3 {
+    @apply text-[2.5rem] text-[#4F5955] font-bold;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.current a {
+    @apply text-[#D9C3A9];
+}

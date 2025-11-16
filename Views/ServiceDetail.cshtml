@@ -1,0 +1,78 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ServiceDetail>
+@{
+    Layout = "mainLayout.cshtml";
+}
+
+<partial name="Partials/Layout/_PageHeader" model="(IPageHeader)Model" />
+
+<section class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-row justify-between">
+            <aside class="w-3/12 flex flex-col gap-4">
+                @Html.GetBlockListHtml(Model.ServiceDetailAsides)
+            </aside>
+            <div class="block w-px bg-[#EAEAEA]"></div>
+            <div class="w-8/12 flex flex-col gap-6 text-gray-800">
+
+                <img src="~/images/image123.svg" alt="Team celebrating success" class="rounded-2xl shadow-md w-full h-auto object-cover" />
+
+    
+                <div>
+                    <h2 class="text-[#4F5955] text-[1.375rem] font-semibold">Key Point</h2>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
+                        <li>Financial planning is the process of helping clients meet their financial needs today and reach their dreams and goals tomorrow.</li>
+                        <li>Pellentesque fringilla augue quis dolor dapibus semper eget non nibh. Ut lobortis, nulla sed euismod posuere, quam magna scelerisque lectus, auctor iaculis quam ligula nec augue.</li>
+                        <li>In hac habitasse platea dictumst. Aliquam felis ante, tincidunt sed magna auctor, aliquet dapibus turpis.</li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h2 class="text-[#4F5955] text-[1.375rem] font-semibold">
+                        A Financial Plan is Based on a Personal Relationship
+                    </h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        No matter where you find yourself today or see yourself in the future, a financial planning relationship with an Ameriprise financial advisor can help you find your financial balance and bring your dreams and goals more within reach.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Our Confident Retirement approach to financial planning begins with a one-on-one conversation. At its core is a personal relationship with an advisor dedicated to helping you reach the future you imagine, on your own terms, in a way that is convenient for you.
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        The financial planning process all starts with learning about you. Your advisor will take the time to:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
+                        <li>Listen closely to you and learn what you value</li>
+                        <li>Analyze your current financial situation</li>
+                        <li>Understand your feelings about managing money and investments</li>
+                    </ul>
+                    <p class="text-gray-700 mt-4 leading-relaxed">
+                        Then your advisor will offer personalized advice and guidance to help you reach your financial goals. Ameriprise advisors have access to a broad array of solutions to help you plan for your confident future.
+                    </p>
+                    <p class="text-gray-700 mt-4 leading-relaxed">
+                        And once you have a plan in place, you may feel more confident knowing that your advisor will stay with you over time, helping you track your progress toward your goals and making adjustments along the way when your life or dreams change.
+                    </p>
+                </div>
+
+                <img src="~/images/image1234.svg" alt="Financial team in a meeting" class="rounded-2xl shadow-md w-full h-auto object-cover" />
+
+
+                <div>
+                    <h2 class="text-[#4F5955] text-[1.375rem] font-semibold">
+                        We’ll Help You Achieve Financial Confidence
+                    </h2>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        Working with a financial advisor may help you come away feeling more confident knowing that you have the support you need to help:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-2 text-gray-700 leading-relaxed">
+                        <li>Cover your essentials. Essentials are the monthly expenses that keep your life running.</li>
+                        <li>Ensure your lifestyle. Lifestyle is about the things that you want to do, and how you want to live, today and in the future.</li>
+                        <li>Prepare for the unexpected. The unexpected are events that could derail your financial plans.</li>
+                        <li>Leave a legacy. Legacy is about the impact you’ll make on the people, charities, and causes that are important to you.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
